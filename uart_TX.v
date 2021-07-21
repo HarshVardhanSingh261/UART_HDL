@@ -1,7 +1,7 @@
 //UART Transmitter module
   
 module uart_TX 
-  #(parameter CLKS_PER_BIT)
+  #(parameter CLKS_PER_BIT=87)
   (input i_Clock,input i_Tx_DV,input [7:0] i_Tx_Byte, 
    output o_Tx_Active,output reg o_Tx_Serial,output o_Tx_Done);
   
